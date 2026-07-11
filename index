@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Controlled Environments Consulting Limited | CECL</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ brandBlue: '#1d4ed8', 
+ brandRed: '#dc2626', 
+ brandDark: '#0f172a',
+ }
+ }
+ }
+ }
+ </script>
+ <style>
+ body { font-family: 'Inter', sans-serif; }
+.hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+ </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+ <!-- Navigation -->
+ <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex justify-between h-20 items-center">
+ 
+ <!-- Recreated Logo Component -->
+ <div class="flex items-center gap-4">
+ <div class="relative w-12 h-12">
+ <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full text-brandBlue opacity-80">
+ <path fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" d="M50 20 A30 30 0 0 1 80 50" />
+ <path fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" d="M80 50 A30 30 0 0 1 50 80" />
+ <path fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" d="M50 80 A30 30 0 0 1 20 50" />
+ <path fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" d="M20 50 A30 30 0 0 1 50 20" />
+ </svg>
+ <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full text-brandRed">
+ <path fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" d="M65 35 A25 25 0 1 0 65 65" />
+ <path fill="currentColor" d="M60 55 L75 55 L67.5 40 Z" />
+ </svg>
+ </div>
+ <div class="flex flex-col leading-tight">
+ <span class="text-brandBlue font-bold text-lg tracking-tight">Controlled Environments</span>
+ <span class="text-brandRed font-semibold text-sm tracking-wide">Consulting Limited</span>
+ </div>
+ </div>
+
+ <div class="hidden md:block">
+ <div class="ml-10 flex items-baseline space-x-8">
+ <a href="#about" class="text-slate-600 hover:text-brandBlue px-3 py-2 text-sm font-medium transition">About</a>
+ <a href="#services" class="text-slate-600 hover:text-brandBlue px-3 py-2 text-sm font-medium transition">Services</a>
+ <a href="#contact" class="bg-brandBlue text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition shadow-sm">Contact Us</a>
+ </div>
+ </div>
+ </div>
+ </nav>
+
+ <!-- Hero Section -->
+ <header class="hero-gradient text-white py-24 lg:py-36">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+ <div class="inline-block px-4 py-1 rounded-full bg-brandBlue/20 border border-brandBlue/30 text-brandBlue text-xs font-bold uppercase tracking-widest mb-6">
+ Proven Industry Leadership
+ </div>
+ <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+ Engineering Stability for <br><span class="text-brandBlue">Controlled Environments.</span>
+ </h1>
+ <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+ CECL delivers high-level technical expertise in system evaluation and risk mitigation, built on a legacy of successful large-scale environmental control ventures.
+ </p>
+ <div class="flex justify-center gap-4">
+ <a href="#services" class="px-8 py-3 bg-brandBlue hover:bg-blue-700 text-white font-semibold rounded-lg transition shadow-lg">Our Expertise</a>
+ <a href="#contact" class="px-8 py-3 bg-transparent border border-slate-500 hover:border-white text-white font-semibold rounded-lg transition">Consult Our Team</a>
+ </div>
+ </div>
+ </header>
+
+ <!-- About Section (UPDATED WITH PEDIGREE) -->
+ <section id="about" class="py-20 bg-white">
+ <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="grid md:grid-cols-2 gap-12 items-center">
+ <div>
+ <h2 class="text-3xl font-bold text-slate-900 mb-6">A Legacy of Excellence</h2>
+ <p class="text-slate-600 mb-4 leading-relaxed">
+ Controlled Environments Consulting Limited (CECL) was established to bring specialized, boutique-level technical insight back to the forefront of the industry. 
+ </p>
+ <p class="text-slate-600 mb-4 leading-relaxed">
+ Following the successful acquisition of the founder's previous environmental control ventures by industry leaders like <strong>Labworks</strong>, CECL focuses on providing the agile, high-precision consulting required for today's most complex facilities.
+ </p>
+ <p class="text-slate-600 leading-relaxed font-semibold italic">
+ We combine the institutional knowledge of large-scale operations with the dedicated attention of a specialized firm.
+ </p>
+ </div>
+ <div class="relative">
+ <div class="absolute -inset-4 bg-slate-100 rounded-2xl -rotate-2"></div>
+ <div class="relative bg-slate-200 h-64 rounded-2xl flex items-center justify-center text-slate-400 italic overflow-hidden shadow-inner">
+ [Professional Facility Image]
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Services Section -->
+ <section id="services" class="py-20 bg-slate-50">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16">
+ <h2 class="text-3xl font-bold text-slate-900">Our Specialized Services</h2>
+ <div class="w-20 h-1 bg-brandRed mx-auto mt-4"></div>
+ <p class="mt-6 text-slate-600">Comprehensive technical solutions for complex environmental requirements.</p>
+ </div>
+ 
+ <div class="grid md:grid-cols-3 gap-8">
+ 
+ <!-- Pillar 1 -->
+ <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brandBlue">
+ <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-lg flex items-center justify-center mb-6">
+ <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+ </svg>
+ </div>
+ <h3 class="text-xl font-bold mb-4 text-slate-800">Assessment & Risk</h3>
+ <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+ <li class="font-medium text-slate-700">System plant evaluation</li>
+ <li class="font-medium text-slate-700">Design risk analysis</li>
+ <li class="font-medium text-slate-700">Insurance system evaluation</li>
+ <li class="font-medium text-slate-700">Feasibility & Budgeting</li>
+ <li class="font-medium text-slate-700">Troubleshooting & Flow analysis</li>
+ </ul>
+ </div>
+
+ <!-- Pillar 2 -->
+ <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brandRed">
+ <div class="w-12 h-12 bg-red-50 text-brandRed rounded-lg flex items-center justify-center mb-6">
+ <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+ </svg>
+ </div>
+ <h3 class="text-xl font-bold mb-4 text-slate-800">Design & Procurement</h3>
+ <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+ <li class="font-medium text-slate-700">Load calculation reviews</li>
+ <li class="font-medium text-slate-700">URS development</li>
+ <li class="font-medium text-slate-700">Vendor spec & selection</li>
+ <li class="font-medium text-slate-700">Bid document preparation</li>
+ <li class="font-medium text-slate-700">Product development consulting</li>
+ </ul>
+ </div>
+
+ <!-- Pillar 3 -->
+ <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-brandBlue">
+ <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-lg flex items-center justify-center mb-6">
+ <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+ </svg>
+ </div>
+ <h3 class="text-xl font-bold mb-4 text-slate-800">Optimization</h3>
+ <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+ <li class="font-medium text-slate-700">Energy retrofit evaluation</li>
+ <li class="font-medium text-slate-700">Thermal stability optimization</li>
+ <li class="font-medium text-slate-700">Refrigerant compliance</li>
+ <li class="font-medium text-slate-700">Commissioning & Oversight</li>
+ <li class="font-medium text-slate-700">Validation support</li>
+ </ul>
+ </div>
+
+ </div>
+ </section>
+
+ <!-- Contact Section -->
+ <section id="contact" class="py-20 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="bg-brandDark rounded-3xl overflow-hidden shadow-2xl">
+ <div class="grid md:grid-cols-2">
+ <div class="p-12 text-white">
+ <h2 class="text-3xl font-bold mb-6">Discuss Your Requirements</h2>
+ <p class="text-slate-400 mb-8">Contact our consulting team today to discuss your project specifications and technical needs.</p>
+ 
+ <div class="space-y-4">
+ <div class="flex items-center gap-4">
+ <span class="text-brandBlue font-semibold">Email:</span>
+ <span class="text-slate-200">info@cecl-consulting.ca</span>
+ </div>
+ <div class="flex items-center gap-4">
+ <span class="text-brandBlue font-semibold">Location:</span>
+ <span class="text-slate-200">[City, Province, Canada]</span>
+ </div>
+ </div>
+ </div>
+ <div class="p-12 bg-slate-800/50">
+ <form class="space-y-4">
+ <div>
+ <label class="block text-sm font-medium text-slate-300 mb-1">Full Name</label>
+ <input type="text" class="w-full bg-slate-700 border-none rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-brandBlue outline-none">
+ </div>
+ <div>
+ <label class="block text-sm font-medium text-slate-300 mb-1">Work Email</label>
+ <input type="email" class="w-full bg-slate-700 border-none rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-brandBlue outline-none">
+ </div>
+ <div>
+ <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+ <textarea rows="4" class="w-full bg-slate-700 border-none rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-brandBlue outline-none"></textarea>
+ </div>
+ <button type="submit" class="w-full bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition shadow-lg">Send Inquiry</button>
+ </form>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="py-12 border-t border-slate-200">
+ <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">
+ <p>&copy; 2026 Controlled Environments Consulting Limited (CECL). All rights reserved.</p>
+ </div>
+ </footer>
+
+</body>
+</html>
